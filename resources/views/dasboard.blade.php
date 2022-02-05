@@ -126,5 +126,14 @@
       </a>
     </div>
   </div>
+  <div class="row">
+    <div class="col-lg-12">
+      <div class="ibox ">
+        <div class="ibox-title">
+          <span class="label label-success float-right">@2022 Februari Asrinurulm</span>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
 @endsection
