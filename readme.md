@@ -17,11 +17,15 @@
 ## Cara Instalasi Project
 * pastikan anda menggunakan versi php 7
 * lalu clone project ini ke xampp/htdocs
-* export database "Apotek.sql" ke PHP MyAdmin
+* export database "apotek.sql" ke PHP MyAdmin
 * buka project di VsCode
-* install composer di project agar project bisa di jalankan
+* install composer di project agar project bisa di jalankan "composer install"
 * jangan lupa pastikan project memiliki halaman .env
-* dan ppastikan jika database yang digunkan sama dengan database yang di export ke MySQL
+* untuk membuat halaman .env jalankan perintah berikut "copy .env.example .env" pada terminal
+* selanjutnya jalankan perintah berikut "php artisan key:generate"
+* pastikan jika database yang digunkan sama dengan database yang di export ke MySQL
+![db](https://user-images.githubusercontent.com/92254494/152670507-7b086956-0e83-4271-9410-e6023d7a385c.PNG)
+
 * Jalankan project dengan mengetik "php artisan serve" pada terminal
 * lalu buka google chrome
 * ketikan link berikut "http://127.0.0.1:8000/"
