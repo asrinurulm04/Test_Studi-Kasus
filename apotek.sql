@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 06 Feb 2022 pada 07.37
+-- Waktu pembuatan: 06 Feb 2022 pada 08.12
 -- Versi server: 10.4.13-MariaDB
 -- Versi PHP: 7.2.32
 
@@ -3716,7 +3716,7 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `name`, `email`, `password`, `remember_token`, `created_at`, `updated_at`) VALUES
-(1, 'asri nurul ma\'rifah', 'asrimarifah0402@gmail.com', '$2y$10$GOuwOmuX0lFdo..Tpkz9metx0wfve.knk0nSVCm5VSkuPGoVFzhm.', 'aoR9kQJjsdLiQlNk70FmVqnWEHGNsFbMWVGzZXxfoSNwmWRl1jpAk3POoxGZ', '2022-02-04 05:41:19', '2022-02-04 05:41:19');
+(1, 'admin', 'adminpro@gmail.com', '$2y$10$wpFgsdRwWImB8AU4qmp4huSwrDntJ1bqZzp.kuiGdFi0Trd8JMjF.', NULL, '2022-02-06 00:12:05', '2022-02-06 00:12:05');
 
 --
 -- Indexes for dumped tables
