@@ -24,6 +24,7 @@
 * untuk membuat halaman .env jalankan perintah berikut "copy .env.example .env" pada terminal
 * selanjutnya jalankan perintah berikut "php artisan key:generate"
 * pastikan jika database yang digunkan sama dengan database yang di export ke MySQL
+
 ![db](https://user-images.githubusercontent.com/92254494/152670507-7b086956-0e83-4271-9410-e6023d7a385c.PNG)
 
 * Jalankan project dengan mengetik "php artisan serve" pada terminal
