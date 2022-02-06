@@ -15,16 +15,33 @@
 ## Akun yang bisa digunkan
 
 ## Cara Instalasi Project
+* pastikan anda menggunakan versi php 7
+* lalu clone project ini ke xampp/htdocs
+* export database "Apotek.sql" ke PHP MyAdmin
+* buka project di VsCode
+* install composer di project agar project bisa di jalankan
+* jangan lupa pastikan project memiliki halaman .env
+* dan ppastikan jika database yang digunkan sama dengan database yang di export ke MySQL
+* Jalankan project dengan mengetik "php artisan serve" pada terminal
+* lalu buka google chrome
+* ketikan link berikut "http://127.0.0.1:8000/"
+* maka anda akan masuk ke halaman login
 
 # Halaman Project
 ## Halaman Login
+![login](https://user-images.githubusercontent.com/92254494/152669880-61f5dad3-2f11-4103-a90c-5ce030ca9c24.PNG)
 
 ## Halaman Dasboard
+![dasboard](https://user-images.githubusercontent.com/92254494/152669893-f4fea346-eee1-4772-8c8c-3926ccda066c.PNG)
 
 ## Halaman Pesan Obat
+![order](https://user-images.githubusercontent.com/92254494/152669898-359fcdda-939e-47c7-9aa2-fc3224ba8fe3.PNG)
 
 ## Halaman Report Transaksi
+![report](https://user-images.githubusercontent.com/92254494/152669900-416bc94e-95cf-491d-83aa-ee59178340e9.PNG)
 
 ## Hasil Download PDF Transakasi
+![hasil pdf](https://user-images.githubusercontent.com/92254494/152669904-d23db4e8-b8ad-4c5f-958d-4329f2f9ae76.PNG)
 
 ## Halama Database
+![db obat](https://user-images.githubusercontent.com/92254494/152669908-6fc3e23b-a502-4b34-ab1f-9d0ea600541f.PNG)
