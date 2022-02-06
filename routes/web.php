@@ -8,10 +8,12 @@ Route::get('home','HomeController@home')->name('home');
 
 /** Auth */
 
-Route::get('daftar', 'Auth\RegistrationController@create');
+Route::get('daftar', 'RegistrationController@create');
 Route::post('add', [
-    'uses'=> 'Auth\RegistrationController@registrationPost',
+    'uses'=> 'RegistrationController@registrationPost',
     'as' => 'add']);
+
+Auth::routes();
  
 Route::get('signin', 'Auth\LoginController@getLogin')->name('signin');
 Route::post('postLogin', 'Auth\LoginController@postLogin')->name('postLogin');

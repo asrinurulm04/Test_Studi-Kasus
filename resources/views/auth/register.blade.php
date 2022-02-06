@@ -16,30 +16,53 @@
 			<div class="wrap-login100">
 				<span class="login100-form-title p-b-34 p-t-27">  Register Now</span>
         <div class="container">
-          <form class="form-login" method="post" action="{{ route('add') }}">
+          <form class="form-login" method="post" action="{{ route('register') }}">
           <div class="login-wrap">
-            <div class="form-group">
-              <input class="form-control" autocomplete="off" id="name" name="name" placeholder="nama" value="{{ old('name') }}" type="text" minlength="2" autofocus required/>
-            </div>
-            <div class="form-group">
-              <input class="form-control" autocomplete="off" id="username" name="username" placeholder="username" value="{{ old('username') }}" type="text" minlength="1" maxlength="12" required/>
-            </div>
-            <div class="form-group">
-              <input class="form-control" id="password" name="password" placeholder="password" type="password" minlength="6" required/>
-            </div>
-            <div class="form-group">
-              <input class="form-control" id="password_confirmation" name="password_confirmation" placeholder="confirm_password" type="password" required/>
-            </div>
-            <div class="form-group">
-              <select id="role" name="role" class="form-control" >
-                @foreach($roles as $role)
-                <option value="{{  $role->id }}" >{{ $role->namaRule }}</option>
-                @endforeach
-              </select>
-            </div>
-            <div class="form-groupcontainer-login100-form-btn">
-              <button class="login100-form-btn btn-block" type="submit"><i class="fa fa-lock"></i> SIGN IN</button>
-              {{ csrf_field() }}
+            <div class="form-group{{ $errors->has('name') ? ' has-error' : '' }}">
+                            <label for="name" class="col-md-12 control-label">Name</label>
+                            <div class="col-md-12">
+                                <input id="name" type="text" class="form-control" name="name" value="{{ old('name') }}" required autofocus>
+                                @if ($errors->has('name'))
+                                    <span class="help-block">
+                                      <strong>{{ $errors->first('name') }}</strong>
+                                    </span>
+                                @endif
+                            </div>
+                        </div>
+                        <div class="form-group{{ $errors->has('email') ? ' has-error' : '' }}">
+                            <label for="email" class="col-md-12 control-label">E-Mail Address</label>
+                            <div class="col-md-12">
+                                <input id="email" type="email" class="form-control" name="email" value="{{ old('email') }}" required>
+                                @if ($errors->has('email'))
+                                    <span class="help-block">
+                                      <strong>{{ $errors->first('email') }}</strong>
+                                    </span>
+                                @endif
+                            </div>
+                        </div>
+                        <div class="form-group{{ $errors->has('password') ? ' has-error' : '' }}">
+                            <label for="password" class="col-md-12 control-label">Password</label>
+                            <div class="col-md-12">
+                                <input id="password" type="password" class="form-control" name="password" required>
+                                @if ($errors->has('password'))
+                                    <span class="help-block">
+                                        <strong>{{ $errors->first('password') }}</strong>
+                                    </span>
+                                @endif
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="password-confirm" class="col-md-12 control-label">Confirm Password</label>
+                            <div class="col-md-12">
+                                <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-md-12 col-md-offset-12">
+                                <button type="submit" class="btn btn-primary">
+                                    Register
+                                </button>
+                                {{ csrf_field() }}
               @if(count($errors) > 0)
               <br><div class="alert alert-danger" style="font-size:11px">
                 <strong>Whoops!</strong><br>
@@ -50,7 +73,8 @@
                 </ul>
               </div>
               @endif
-            </div>
+                            </div>
+                        </div>
             </form>
             <div class="form-group registration text-center">
               <a href="{{ route('signin') }}">
