@@ -13,6 +13,8 @@
 * database : Mysql
 
 ## Akun yang bisa digunkan
+* email : adminpro@gmail.com
+* password : 123456
 
 ## Cara Instalasi Project
 * pastikan anda menggunakan versi php 7
