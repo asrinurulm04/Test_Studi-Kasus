@@ -7,52 +7,41 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/license.svg" alt="License"></a>
 </p>
 
-## About Laravel
+## About Project
+* versi Laravel : 5.5
+* versi php : 7.2.32
+* database : Mysql
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel attempts to take the pain out of development by easing common tasks used in the majority of web projects, such as:
+## Akun yang bisa digunkan
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+## Cara Instalasi Project
+* pastikan anda menggunakan versi php 7
+* lalu clone project ini ke xampp/htdocs
+* export database "Apotek.sql" ke PHP MyAdmin
+* buka project di VsCode
+* install composer di project agar project bisa di jalankan
+* jangan lupa pastikan project memiliki halaman .env
+* dan ppastikan jika database yang digunkan sama dengan database yang di export ke MySQL
+* Jalankan project dengan mengetik "php artisan serve" pada terminal
+* lalu buka google chrome
+* ketikan link berikut "http://127.0.0.1:8000/"
+* maka anda akan masuk ke halaman login
 
-Laravel is accessible, yet powerful, providing tools needed for large, robust applications.
+# Halaman Project
+## Halaman Login
+![login](https://user-images.githubusercontent.com/92254494/152669880-61f5dad3-2f11-4103-a90c-5ce030ca9c24.PNG)
 
-## Learning Laravel
+## Halaman Dasboard
+![dasboard](https://user-images.githubusercontent.com/92254494/152669893-f4fea346-eee1-4772-8c8c-3926ccda066c.PNG)
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of any modern web application framework, making it a breeze to get started learning the framework.
+## Halaman Pesan Obat
+![order](https://user-images.githubusercontent.com/92254494/152669898-359fcdda-939e-47c7-9aa2-fc3224ba8fe3.PNG)
 
-If you're not in the mood to read, [Laracasts](https://laracasts.com) contains over 1100 video tutorials on a range of topics including Laravel, modern PHP, unit testing, JavaScript, and more. Boost the skill level of yourself and your entire team by digging into our comprehensive video library.
+## Halaman Report Transaksi
+![report](https://user-images.githubusercontent.com/92254494/152669900-416bc94e-95cf-491d-83aa-ee59178340e9.PNG)
 
-## Laravel Sponsors
+## Hasil Download PDF Transakasi
+![hasil pdf](https://user-images.githubusercontent.com/92254494/152669904-d23db4e8-b8ad-4c5f-958d-4329f2f9ae76.PNG)
 
-We would like to extend our thanks to the following sponsors for helping fund on-going Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell):
-
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[British Software Development](https://www.britishsoftware.co)**
-- [Fragrantica](https://www.fragrantica.com)
-- [SOFTonSOFA](https://softonsofa.com/)
-- [User10](https://user10.com)
-- [Soumettre.fr](https://soumettre.fr/)
-- [CodeBrisk](https://codebrisk.com)
-- [1Forge](https://1forge.com)
-- [TECPRESSO](https://tecpresso.co.jp/)
-- [Pulse Storm](http://www.pulsestorm.net/)
-- [Runtime Converter](http://runtimeconverter.com/)
-- [WebL'Agence](https://weblagence.com/)
-
-## Contributing
-
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+## Halama Database
+![db obat](https://user-images.githubusercontent.com/92254494/152669908-6fc3e23b-a502-4b34-ab1f-9d0ea600541f.PNG)
