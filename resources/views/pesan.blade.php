@@ -325,7 +325,7 @@
         var i = 2;
         $("#add_row").click(function() {
           $('#addr' + i).html("</select></td><td><select name='pilih_obat[]' class='form-control items' id='pilih_obat"+i+"'>"+
-            '<option value="">->Select One<-</option>'+pilih+
+            '<option value="">->Select One<-</option>'+pilih2+
             "</select></td><td id='stok_obat"+i+"'></td><td id='jumlah"+i+"'>"+
             "<td></td>");
 
