@@ -8,7 +8,7 @@ use Redirect;
 
 class ObatController extends Controller
 {
-    public function index(){
+    public function index(){ 
         $obat = obat::all();
         return view('obat')->with([
             'obat' => $obat
