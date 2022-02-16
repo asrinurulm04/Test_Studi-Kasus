@@ -36,3 +36,4 @@ Route::post('editStok/{id}','ObatController@editStok')->name('editStok');
 // Report
 Route::get('report/{kode}','ReportController@report')->name('report');
 Route::get('laporan-pdf/{kode}','ReportController@generatePDF')->name('laporan-pdf');
+Route::get('obatan','ObatController@obatan')->name('obatan');

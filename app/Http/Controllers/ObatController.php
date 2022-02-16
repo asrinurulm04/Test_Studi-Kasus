@@ -22,4 +22,9 @@ class ObatController extends Controller
 
         return redirect::back()->with('status', 'Stok Berhasil Diupdate!');
     }
+
+    public function obatan(){
+        $obat = obat::where('obatalkes_id','1')->get();
+        echo $obat;
+    }
 }
