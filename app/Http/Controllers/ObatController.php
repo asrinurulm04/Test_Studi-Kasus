@@ -21,5 +21,5 @@ class ObatController extends Controller
         ]);
 
         return redirect::back()->with('status', 'Stok Berhasil Diupdate!');
-    }
+    } 
 }
