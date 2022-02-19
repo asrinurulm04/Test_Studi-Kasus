@@ -26,5 +26,5 @@ class ObatController extends Controller
     public function obatan(){
         $obat = obat::where('obatalkes_id','1')->get();
         echo $obat;
-    }
+    } 
 }
